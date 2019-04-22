@@ -1,0 +1,2 @@
+/*minus 60px(navbar) without space around minus sign calc wont work*/
+  min-height: calc(100vh - 60px);

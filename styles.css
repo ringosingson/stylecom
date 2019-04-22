@@ -21,14 +21,14 @@ body {
 
 /* --------------- Navbar ---------------- */
 .navbar {
-  position: sticky;/*stick in one place navbar*/
+  position: sticky; /*stick in one place navbar*/
   top: 0;
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   background: rgb(231, 226, 221);
-  z-index: 1;/*visible while scrolling thru the page so its not hidden*/
+  z-index: 1; /*visible while scrolling thru the page so its not hidden*/
 }
 .navbar-center {
   width: 100%;
@@ -58,3 +58,41 @@ body {
   color: var(--mainWhite);
 }
 /* --------------- End of Navbar ----------------*/
+
+/* --------------- Hero ---------------- */
+.hero {
+  /*minus 60px(navbar) without space around minus sign calc wont work*/
+  min-height: calc(100vh - 60px);
+  background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+/* --------------- End of Hero ---------------- */
