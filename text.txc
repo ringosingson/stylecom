@@ -1,2 +1,11 @@
 /*minus 60px(navbar) without space around minus sign calc wont work*/
   min-height: calc(100vh - 60px);
+
+  E.7
+  --auto fit and auto-fill grid system
+
+   /*hiding the button*/
+  transform: translateX(101%);
+
+   /*showing the button  when hover*/
+  transform: translateX(0);
