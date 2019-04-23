@@ -9,3 +9,16 @@
 
    /*showing the button  when hover*/
   transform: translateX(0);
+E.13
+  // get all products
+  products.getProducts().then(products => {
+    ui.displayProducts(products);
+    Storage.saveProducts(products);
+  });
+});
+//dot then is run only after getProducts finish runing
+E.14
+static getProduct(id) {
+    let products = JSON.parse(localStorage.getItem("products")); //parse to convert back becos its store in string
+    return products.find(product => product.id === id);
+  }
