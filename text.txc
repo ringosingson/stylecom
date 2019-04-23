@@ -25,3 +25,17 @@ static getProduct(id) {
   E.20
   cartContent.removeChild(removeItem.parentElement.parentElement);
   //parent a ache nadia div ni chunga che
+  E.23
+  paste cdn of contentful in html
+ <!-- contenful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+  paste the code at top of app.js
+  const client = contentful.createClient({
+  // This is the space ID. A space is like a project folder in Contentful terms
+  space: "developer_bookshelf",
+  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+  accessToken: "0b7f6x59a0"
+});
+
+create new api
