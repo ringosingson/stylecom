@@ -22,3 +22,6 @@ static getProduct(id) {
     let products = JSON.parse(localStorage.getItem("products")); //parse to convert back becos its store in string
     return products.find(product => product.id === id);
   }
+  E.20
+  cartContent.removeChild(removeItem.parentElement.parentElement);
+  //parent a ache nadia div ni chunga che
